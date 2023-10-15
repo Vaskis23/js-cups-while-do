@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const drinkCupPrice = 230
+        let money = 700
+
+        let cups = Math.floor(money / drinkCupPrice)
+        console.log("1. Hmmm, I think I could drink " + cups + "drinks!")
+        console.log("2. ")
+    
+       while(money >= drinkCupPrice) {
+        console.log(" - i still have money", money, "drink one more")
+        money = money - drinkCupPrice
+    }
+    console.log("money left", money )   
+        // do {
+        //     console.log(" - i still have money", money, "drink one more")
+        //     money -= drinkCupPrice
+        // } while (money >= drinkCupPrice)
+        // console.log("money left", money)
+    </script>
+</body>
+</html>
